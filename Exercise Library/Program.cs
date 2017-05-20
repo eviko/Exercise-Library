@@ -17,7 +17,7 @@ namespace Exercise_Library
             Library l1 = new Library();
             l1.AddBook(b1);
             l1.AddBook(b2);
-            l1.AddBook(b3);                      
+            l1.AddBook(b3);
 
             User u1 = new User("Evi", "5050");
             User u2 = new User("Billy", "2020");
@@ -35,17 +35,13 @@ namespace Exercise_Library
             {
                 List<Book> books = Librarian1.RequestBookByAuthor("Bobby Bob", "5051");
                 Console.WriteLine("I got my books !");
-                
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                Console.WriteLine("I did not got my books !");
+                Console.WriteLine("I did not get my books !");
                 Console.WriteLine(ex.Message);
             }
-            
             Console.ReadKey();
-
         }
-
     }
 }
